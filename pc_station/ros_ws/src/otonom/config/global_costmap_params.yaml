@@ -1,0 +1,21 @@
+global_costmap:
+  global_frame: map
+  robot_base_frame: base_link
+  update_frequency: 1.0
+  static_map: true
+  plugins:
+    - {name: static_layer, type: "costmap_2d::StaticLayer"}
+    - {name: voxel_layer, type: "costmap_2d::VoxelLayer"}
+  voxel_layer:
+    map_type: costmap_2d::VoxelLayer
+    track_unknown_space: true
+    mark_occupied: true
+    min_obstacle_height: 0.0
+    max_obstacle_height: 2.0
+    observation_sources: depth_camera_sensor
+    depth_camera_sensor:
+      sensor_frame: depth_camera_link
+      data_type: PointCloud2
+      topic: /rtabmap/cloud_map
+      transform_tolerance: 1.0
+

@@ -1,0 +1,13 @@
+# Raspberry Pi — Python Dependencies
+#
+# Install with:
+#   pip install -r requirements_rpi.txt
+#
+# ROS packages (rospy, std_msgs, geometry_msgs) must be installed via the
+# ROS apt repository. RPi.GPIO is typically pre-installed on Raspberry Pi OS.
+
+# GPIO control
+RPi.GPIO>=0.7.0
+
+# (Optional) if you need serial communication on the RPi side
+pyserial>=3.5

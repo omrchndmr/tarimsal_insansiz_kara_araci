@@ -1,0 +1,21 @@
+<launch>
+    <!-- Set the parameters -->
+    <param name="pixel_format" value="yuyv" />
+    <param name="video_device" value="/dev/video2" />
+
+    <!-- Launch the USB camera node -->
+    <node name="usb_cam_node" pkg="usb_cam" type="usb_cam_node" output="screen">
+        <param name="video_device" value="/dev/video2" />
+        <param name="pixel_format" value="yuyv" />
+    </node>
+
+    <!-- Launch the face detection script -->
+    <node name="face_detector" pkg="face_detection" type="face_detector.py" output="screen" />
+
+    <!-- Launch the aci.py script -->
+    <node name="aci" pkg="face_detection" type="aci.py" output="screen" />
+
+    <!-- Launch the flexveri.py script -->
+    <node name="flexveri" pkg="face_detection" type="flexveri.py" output="screen" />
+</launch>
+

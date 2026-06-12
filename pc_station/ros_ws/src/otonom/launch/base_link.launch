@@ -1,0 +1,7 @@
+<launch>
+    <!-- base_link ve kinect_link arasındaki dönüşümü tanımlayın -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_kinect" args="0 0 1 0 0 0 base_link kinect_link" />
+    <!-- base_link ve diğer çerçeveleri tanımlayın (örneğin, kamera çerçeveleri) -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_camera" args="0 0 0 0 0 0 base_link camera_rgb_frame" />
+</launch>
+

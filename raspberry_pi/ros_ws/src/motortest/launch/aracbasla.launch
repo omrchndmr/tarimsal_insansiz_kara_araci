@@ -1,0 +1,13 @@
+<launch>
+    <!-- Node 1 -->
+    <node name="motortest" pkg="motortest" type="motortest.py" output="screen">
+    </node>
+
+    <!-- Node 2 -->
+    <node name="capa_hareket" pkg="motortest" type="capahareket.py" output="screen">
+    </node>
+
+    <!-- Node 3 -->
+    <node name="mesafetest" pkg="motortest" type="mesafetest.py" output="screen">
+    </node>
+</launch>

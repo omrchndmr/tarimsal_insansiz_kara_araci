@@ -1,0 +1,14 @@
+<launch>
+    <!-- Node 1 -->
+    <node name="face_detector" pkg="face_detection" type="face_detector.py" output="screen">
+    </node>
+
+    <!-- Node 2 -->
+    <node name="flexveri" pkg="face_detection" type="flexveri.py" output="screen">
+    </node>
+
+    <!-- Node 3 -->
+    <node name="listener" pkg="face_detection" type="mesafeveri.py" output="screen">
+    </node>
+</launch>
+

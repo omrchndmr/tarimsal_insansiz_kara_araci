@@ -1,0 +1,12 @@
+<launch>
+  <!-- Start move_base node -->
+  <node name="move_base" pkg="move_base" type="move_base" output="screen">
+    <param name="base_global_planner" value="navfn/NavfnROS"/>
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
+    <param name="global_costmap/robot_base_frame" value="base_link"/>
+    <param name="local_costmap/robot_base_frame" value="base_link"/>
+    <param name="global_costmap/costmap" value="$(find face_detection)/config/global_costmap_params.yaml"/>
+    <param name="local_costmap/costmap" value="$(find face_detection)/config/local_costmap_params.yaml"/>
+  </node>
+</launch>
+

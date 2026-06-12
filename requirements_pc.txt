@@ -1,0 +1,20 @@
+# PC Station — Python Dependencies
+#
+# Install with:
+#   pip install -r requirements_pc.txt
+#
+# ROS packages (rospy, cv_bridge, sensor_msgs, geometry_msgs, std_msgs)
+# must be installed via the ROS apt repository, not pip.
+
+# Computer Vision
+opencv-python>=4.5.0
+numpy>=1.21.0
+
+# YOLOv8 object detection
+ultralytics>=8.0.0
+
+# Serial communication (gyro + distance sensor bridge)
+pyserial>=3.5
+
+# Arduino Firmata bridge (flex sensor + sonar)
+pymata4>=1.13
