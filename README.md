@@ -3,6 +3,14 @@
 **Autonomous Agricultural Ground Vehicle** — a two-computer ROS1 system for
 autonomous crop-row following and mechanical weeding.
 
+
+
+
+
+
+
+
+
 ---
 
 ## Short Description
