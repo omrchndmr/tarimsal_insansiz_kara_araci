@@ -1,4 +1,5 @@
 # Tarımsal İnsansız Kara Aracı
+https://github.com/user-attachments/assets/ba17b442-275d-4cad-912a-9253f446445d
 
 **Autonomous Agricultural Ground Vehicle** — a two-computer ROS1 system for
 autonomous crop-row following and mechanical weeding.
@@ -267,7 +268,6 @@ License not specified. All rights reserved by the project authors.
 
 
 
-https://github.com/user-attachments/assets/ba17b442-275d-4cad-912a-9253f446445d
 
 
 
